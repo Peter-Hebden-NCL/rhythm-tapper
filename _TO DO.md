@@ -1,0 +1,3 @@
+- write README
+- trim unnecessary files
+- write clear comments 

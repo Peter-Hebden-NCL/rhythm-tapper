@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8'">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <style>
+
+            body {
+                background-color: black;
+                color: white;
+                text-shadow: none;
+                font-family: sans-serif;
+                border: solid white 1px;
+                overflow-y: hidden;
+                margin: 2%;
+            }
+
+            #display {
+                height: 100%;
+                width: 69%;
+                float: left;
+                text-align: center;
+            }
+
+            #line-display {
+                text-align: center;
+                position: absolute;
+                width: 69%;
+                bottom: 10%;
+                right: 0;
+            }
+
+            #controls {
+                height: 99%;
+                width: 30%;
+                float: left;
+                border-right: solid white 1px;
+                padding: 0.25em;
+            }
+
+            #options {
+                overflow-x: scroll;
+            }
+
+            #controls div {
+                margin-top: 1em;
+            }
+
+            #stop {
+                color: red;
+            }
+
+            .speed-button {
+                background-color: white;
+                color: black;
+                padding: 0.25em 0.5em;
+            }
+
+            .noclick {
+                color: grey;
+            }
+
+            #the_dot {
+                height: 100%;
+                margin: auto;
+                background-image: url(dot.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                opacity: 0.5;
+                position: absolute;
+                top: 0;
+            }
+
+            .big-dot {
+                width: 50%;
+                right: 9%;
+            }
+
+            .med-dot {
+                width: 40%;
+                right: 14%;
+            }
+
+            .little-dot {
+                width: 30%;
+                right: 19%;
+            }
+
+            .hidden {
+                display: none !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="controls">
+            <div id="poems">
+                <div class="poet-select" id="kay">'In My Country' by Jackie Kay</div>
+                <div class="poet-select" id="prynne">'Rich in Vitamin C' by J.H. Prynne</div>
+                <div class="poet-select" id="williams">'Diagnosis' by C.K. Williams</div>
+            </div>
+            <hr/>
+            <div>&nbsp;</div>
+            <div id="options">
+                <div style="min-width: 15em">
+                    <span class="speed-button" id="minus-button">&ndash;</span>
+                    &nbsp;&nbsp;&nbsp; Reading Speed &nbsp;&nbsp;&nbsp;
+                    <span class="speed-button" id="plus-button">&plus;</span>
+                </div>
+                <div>&nbsp;</div>
+                <div><input type="checkbox" id="show-text" value="show-text" checked>
+                    <label for="show-text">Show text</label>
+                </div>
+                <div>&nbsp;</div>
+                <div id="stop" class="hidden">Stop</div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="the_dot" class="hidden">
+                <!--Dot as BG image-->
+            </div>
+            <div id="line-display"><!--line generated here--></div>
+        </div>
+
+    </body>
+</html>
