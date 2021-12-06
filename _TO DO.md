@@ -1,4 +1,0 @@
-- write README
-- trim unnecessary files
-- write clear comments
-- replace poem texts with placeholders
